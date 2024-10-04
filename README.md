@@ -1,22 +1,38 @@
-# Vocabulo-LandingPage
+# create-svelte
 
-### Status: 
-Missing category scrollview section and Vocabulo Kid mockup and Text 
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-### Technology:
-- Built with Svelte
-- Animations powered by GSAP
+## Creating a project
 
-### Landing Page Design
-- Note: The current screenshots of the app do not display the animations, but they are implemented on the code page.
+If you're seeing this, you've probably already done this step. Congrats!
 
-### Features:
-- Simply press the switch button to toggle between information for Vocabul'o and Vocabul'o Junior.
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-## Design landing Page
-  
-    
-     
-![image](https://github.com/user-attachments/assets/fcef8844-8c32-40f2-bb1d-91e638be3932)
-![image](https://github.com/user-attachments/assets/0b460ccf-1e04-4518-9bf0-0cf4f7e5bbfb)
-![image](https://github.com/user-attachments/assets/4048c685-a65b-45ef-8a19-58be9d8cf0e1)
+# create a new project in my-app
+npm create svelte@latest my-app
+```
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
