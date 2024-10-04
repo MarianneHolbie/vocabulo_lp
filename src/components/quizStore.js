@@ -17,7 +17,16 @@ const createIsQuizMode = () => {
       }
       set(value);
     },
-    toggle: () => update(n => !n)
+    toggle: () => {
+      if (browser) {
+        update(n => {
+          localStorage.setItem('isQuizMode', !n);
+          return !n;
+        });
+      } else {
+        update(n => !n);
+      }
+    }
   };
 };
 
