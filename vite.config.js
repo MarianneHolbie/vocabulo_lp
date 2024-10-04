@@ -3,15 +3,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
     plugins: [sveltekit()],
-    optimizeDeps: {
-        include: ['gsap', 'gsap/ScrollTrigger']
-    },
     ssr: {
         noExternal: ['gsap']
-    },
-    build: {
-        rollupOptions: {
-            external: ['@sveltekit', 'svelte']
-        }
     }
 });
