@@ -1,6 +1,8 @@
-// Import the writable function from Svelte's store module
 import { writable } from 'svelte/store';
+import { browser } from '$app/environment';
 
-// Create and export a writable store named 'isQuizMode'
-// Initialize it with a default value of true
-export const isQuizMode = writable(true);
+export const isQuizMode = writable(browser ? localStorage.getItem('isQuizMode') === 'true' : false);
+
+if (browser) {
+  isQuizMode.subscribe(value => localStorage.setItem('isQuizMode', value));
+}
