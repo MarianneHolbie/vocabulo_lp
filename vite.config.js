@@ -9,9 +9,4 @@ export default defineConfig({
   ssr: {
     noExternal: ['gsap']
   },
-  build: {
-    rollupOptions: {
-      external: ['@sveltejs/kit', 'svelte']
-    }
-  }
 });
